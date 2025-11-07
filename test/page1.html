@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kokoro Experiences</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* Kleurenpalet Kokoro */
+      :root {
+        --kokoro-bg: #E6D7B9;       /* Zand / beige */
+        --kokoro-primary: #355070;  /* Diep blauw */
+        --kokoro-accent: #4ABDAC;   /* Turquoise */
+        --kokoro-secondary: #E07A5F; /* Terracotta */
+        --kokoro-highlight: #F2C14E; /* Goud / oker */
+        --kokoro-text: #333333;      /* Donkergrijs */
+      }
+
+      body {
+        background-color: var(--kokoro-bg);
+        color: var(--kokoro-text);
+      }
+
+      a {
+        color: var(--kokoro-accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: var(--kokoro-secondary);
+      }
+
+      .navbar {
+        background-color: var(--kokoro-primary);
+      }
+
+      .navbar-brand, .navbar-nav .nav-link {
+        color: #fff;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: var(--kokoro-accent);
+      }
+
+      .hero {
+        background-color: var(--kokoro-bg);
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .hero h1 {
+        color: var(--kokoro-secondary);
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        color: var(--kokoro-text);
+        font-size: 1.2rem;
+      }
+
+      .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+      }
+
+      .btn-kokoro {
+        background-color: var(--kokoro-accent);
+        color: #fff;
+        border-radius: 50px;
+      }
+
+      .btn-kokoro:hover {
+        background-color: var(--kokoro-secondary);
+        color: #fff;
+      }
+
+      footer {
+        background-color: var(--kokoro-primary);
+        color: var(--kokoro-bg);
+        padding: 40px 0;
+      }
+
+      footer a {
+        color: var(--kokoro-bg);
+      }
+
+      footer a:hover {
+        color: var(--kokoro-highlight);
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">Kokoro</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#ervaringen">Ervaringen</a></li>
+            <li class="nav-item"><a class="nav-link" href="#over">Over</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Ontdek de wereld met Kokoro</h1>
+        <p>Beleef unieke ervaringen, verruim je blik en laat je hart groeien.</p>
+        <a href="#ervaringen" class="btn btn-kokoro btn-lg mt-3">Bekijk Ervaringen</a>
+      </div>
+    </section>
+
+    <!-- Experiences / Cards Section -->
+    <section id="ervaringen" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" style="color: var(--kokoro-secondary)">Onze Ervaringen</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <img src="https://via.placeholder.com/400x250" class="card-img-top rounded" alt="Ervaring 1">
+              <div class="card-body">
+                <h5 class="card-title">Avontuurlijke Reizen</h5>
+                <p class="card-text">Ontdek nieuwe plekken en beleef onvergetelijke avonturen met gelijkgestemden.</p>
+                <a href="#" class="btn btn-kokoro">Lees Meer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <img src="https://via.placeholder.com/400x250" class="card-img-top rounded" alt="Ervaring 2">
+              <div class="card-body">
+                <h5 class="card-title">Culturele Belevenissen</h5>
+                <p class="card-text">Duik in lokale culturen, proef gerechten en verruim je horizon.</p>
+                <a href="#" class="btn btn-kokoro">Lees Meer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <img src="https://via.placeholder.com/400x250" class="card-img-top rounded" alt="Ervaring 3">
+              <div class="card-body">
+                <h5 class="card-title">Mindfulness & Groei</h5>
+                <p class="card-text">Beleef momenten van reflectie, persoonlijke groei en innerlijke rust.</p>
+                <a href="#" class="btn btn-kokoro">Lees Meer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>&copy; 2025 Kokoro Experiences. Alle rechten voorbehouden.</p>
+        <p>
+          <a href="#">Privacybeleid</a> | <a href="#">Contact</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WeKokoro - Urban Night</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+:root {
+  --kokoro-bg: #121212;
+  --kokoro-primary: #BB86FC;
+  --kokoro-accent: #03DAC6;
+  --kokoro-secondary: #3700B3;
+  --kokoro-text: #E0E0E0;
+}
+
+body { font-family:'Poppins', sans-serif; margin:0; background:var(--kokoro-bg); color:var(--kokoro-text); scroll-behavior:smooth; }
+a { text-decoration:none; color:var(--kokoro-accent); }
+a:hover { color:var(--kokoro-secondary); }
+.navbar { background:var(--kokoro-primary); }
+.navbar-brand, .navbar-nav .nav-link { color:#fff; font-weight:600; }
+.navbar-nav .nav-link:hover { color:var(--kokoro-accent); }
+
+/* Hero */
+.hero { position:relative; height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:#fff; overflow:hidden; }
+.hero::before { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; background-size:cover; filter:brightness(0.5); z-index:-1; }
+.hero h1 { font-size:3rem; font-weight:700; margin-bottom:1rem; }
+.hero p { font-size:1.3rem; margin-bottom:2rem; }
+.btn-kokoro { background:var(--kokoro-accent); color:#121212; border-radius:50px; font-weight:600; transition:0.3s; }
+.btn-kokoro:hover { background:var(--kokoro-secondary); transform:scale(1.05); }
+
+/* Diagonal cards */
+.experience-section { padding:100px 20px 60px; background:var(--kokoro-bg); }
+.experience-card { border-radius:25px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.5); transition:0.3s; background:#1E1E1E; margin-bottom:40px; }
+.experience-card:hover { transform:translateY(-15px); box-shadow:0 20px 40px rgba(0,0,0,0.7); }
+.experience-card img { width:100%; height:250px; object-fit:cover; }
+
+/* CTA */
+.cta { background:var(--kokoro-accent); color:var(--kokoro-bg); padding:100px 20px; text-align:center; }
+.cta h2 { font-size:2.5rem; font-weight:700; margin-bottom:20px; }
+.cta p { font-size:1.2rem; margin-bottom:30px; }
+.cta .btn-light { border-radius:50px; }
+
+/* Footer */
+footer { background:var(--kokoro-primary); color:var(--kokoro-bg); padding:60px 20px; text-align:center; }
+footer a { color:var(--kokoro-bg); margin:0 10px; }
+footer a:hover { color:var(--kokoro-secondary); }
+footer form input { max-width:300px; }
+
+@media (max-width:768px) { .hero h1{font-size:2rem;} .hero p{font-size:1rem;} }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">WeKokoro</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#ervaringen">Ervaringen</a></li>
+<li class="nav-item"><a class="nav-link" href="#cta">Word Lid</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<h1>Avontuur Wacht Op Jou</h1>
+<p>Sluit je aan bij WeKokoro en ontdek unieke reizen, mindfulness en cultuur.</p>
+<a href="#ervaringen" class="btn btn-kokoro btn-lg me-3">Bekijk Ervaringen</a>
+<a href="#cta" class="btn btn-outline-light btn-lg">Join the Adventure</a>
+</div>
+</section>
+
+<section id="ervaringen" class="experience-section">
+<div class="container">
+<h2 class="text-center mb-5" style="color:var(--kokoro-secondary)">Onze Ervaringen</h2>
+<div class="row g-4">
+<div class="col-md-6" style="transform:rotate(-2deg);"><div class="experience-card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt=""><div class="p-4"><h5>Avontuurlijke Reizen</h5><p>Ontdek nieuwe plekken en beleef onvergetelijke avonturen met gelijkgestemden.</p><a href="#" class="btn btn-kokoro">Lees Meer</a></div></div></div>
+<div class="col-md-6" style="transform:rotate(2deg);"><div class="experience-card"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=400&q=80" alt=""><div class="p-4"><h5>Culturele Belevenissen</h5><p>Duik in lokale culturen, proef gerechten en verruim je horizon.</p><a href="#" class="btn btn-kokoro">Lees Meer</a></div></div></div>
+<div class="col-md-6" style="transform:rotate(-1deg);"><div class="experience-card"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt=""><div class="p-4"><h5>Mindfulness & Groei</h5><p>Beleef momenten van reflectie, persoonlijke groei en innerlijke rust.</p><a href="#" class="btn btn-kokoro">Lees Meer</a></div></div></div>
+</div>
+</div>
+</section>
+
+<section id="cta" class="cta">
+<div class="container">
+<h2>Word lid van WeKokoro</h2>
+<p>Sluit je aan bij een community van jonge avonturiers, mindful travelers en cultuurexplorers.</p>
+<a href="#inschrijven" class="btn btn-light btn-lg text-primary">Join the Adventure</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>&copy; 2025 WeKokoro. Alle rechten voorbehouden.</p>
+<p>
+<a href="#"><i class="bi bi-facebook"></i></a>
+<a href="#"><i class="bi bi-instagram"></i></a>
+<a href="#"><i class="bi bi-twitter"></i></a>
+</p>
+<form class="d-flex justify-content-center mt-3">
+<input type="email" class="form-control me-2" placeholder="Jouw email">
+<button type="submit" class="btn btn-kokoro">Inschrijven</button>
+</form>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.
